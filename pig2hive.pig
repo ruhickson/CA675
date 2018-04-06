@@ -6,8 +6,10 @@ dataset = LOAD '/home/cloudera/Desktop/CA675Assignment2/measurements.csv' USING 
 
 foreach_data = FOREACH dataset GENERATE capturetime,latitude,longitude,value,unit;
 
-dump foreach_data
- 
--- filtereddataset = FILTER foreach_data BY (capturetime MATCHES '2017-*') AND unit == 'cpm';
+filtereddataset = FILTER foreach_data BY unit == 'cpm'; 
+
+dump filtereddataset
+
+-- filtereddataset = FILTER foreach_data BY capturetime MATCHES '2017-*' AND unit == 'cpm';
 
 -- STORE foreach_data INTO 'ca675db.measurements' USING org.apache.hive.hcatalog.pig.HCatStorer();
