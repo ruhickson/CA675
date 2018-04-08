@@ -12,4 +12,4 @@ dump filtered_dataset
 
 -- filtered_dataset = FILTER foreach_data BY capturetime MATCHES '2017-*' AND unit == 'cpm';
 
--- STORE filtered_dataset INTO 'ca675db.measurements' USING org.apache.hive.hcatalog.pig.HCatStorer();
+-- STORE filtered_dataset INTO 'testca675db.measurements' USING org.apache.hive.hcatalog.pig.HCatStorer();
