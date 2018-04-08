@@ -1,0 +1,1 @@
+hive -e "SELECT latitude, longitude, value FROM ca675db.measurements" | sed 's/[\t]/,/g >> cleaned_measurements.csv
