@@ -3,7 +3,7 @@
 Description: An application which would provide a visualization of the radiation level counted by radiation monitoring instrument which measures counts per minute (cpm) in certain points on the map of the Earth based on longitude and latitude.
 
 * Initial Process:
-    * Download the Safecast Radiation Measurements dataset from official safecast.org website size of 9.6GB
+    * Download the Safecast Radiation Measurements dataset from official safecast.org website size of 10.5GB
     
     * Load the data to PIG and structure, and filter the dataset to provide the data only for 2017
     
