@@ -13,14 +13,15 @@
       function drawMarkersMap() {
       var data = google.visualization.arrayToDataTable([
         ['City',   'Population', 'Area'],
-        ['Rome',      2761477,    1285.31],
-        ['Ciampino',  38262,      11]
+        ['Rome',      -2761477,    -1285.31],
+        ['Rome',      0,    0]
       ]);
 
       var options = {
         //region: 'IT',
         displayMode: 'markers',
-        colorAxis: {colors: ['green', 'red']}
+        //colorAxis: {colors: ['green', 'red']}
+        colorAxis: {colors: ['red', 'green']}
       };
 
       var chart = new google.visualization.GeoChart(document.getElementById('chart_div'));
